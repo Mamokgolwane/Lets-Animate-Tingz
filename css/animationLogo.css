@@ -1,3 +1,28 @@
 body{
     background-color:bisque;
 }
+.image{ /*div contains the image*/
+  text-align: center;/*aligned the content inside the div with is the image*/
+}
+
+#android{ /*is the image id*/
+ width: 100px;
+ height:100px;
+}
+
+@keyframes andy-warning {
+    0%{opacity:100%;filter: blur(3px);transform:rotate(-0.1turn)}
+    25%{transform:rotate(0.1turn);}
+    50%{opacity:50%;width:400px; height:400px;filter:none;}
+    75%{transform:rotate(-0.1turn);}
+    100%{opacity:100%;filter: blur(3px);transform:rotate(1turn)}
+    
+}
+
+#android:hover{
+ 
+    animation-name: andy-warning;
+    animation-duration: 2s;
+    animation-iteration-count:1;
+    animation-timing-function: ease-out;
+}
